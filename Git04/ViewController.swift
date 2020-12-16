@@ -1,9 +1,4 @@
-//
-//  ViewController.swift
-//  Git04
-//
-//  Created by johnstockton on 2020/12/16.
-//
+
 
 import UIKit
 
@@ -11,9 +6,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setui()
     }
 
-
+    private func setui(){
+        
+        let l = UILabel(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        
+        l.text = "hello world"
+        
+        self.view.addSubview(l)
+    }
 }
 
